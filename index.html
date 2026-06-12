@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EcoAgro: Produzir sem Destruir</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🌱 EcoAgro: Produzir sem Destruir</h1>
+    <p>Conheça práticas que fortalecem o agro e garantem um futuro sustentável.</p>
+    <a href="#solo" class="btn">Começar Jornada</a>
+</header>
+
+<nav>
+    <a href="#solo">Solo</a>
+    <a href="#agua">Nascentes</a>
+    <a href="#bio">Biodiversidade</a>
+    <a href="#regen">Agricultura</a>
+    <a href="#simulador">Simulador</a>
+</nav>
+
+<section id="solo">
+    <h2>🌾 Conservação do Solo</h2>
+    <p>
+        O solo é fundamental para a produção agrícola. A erosão e o uso inadequado
+        podem reduzir sua fertilidade e prejudicar as colheitas.
+    </p>
+
+    <br>
+
+    <ul>
+        <li>✅ Plantio Direto</li>
+        <li>✅ Rotação de Culturas</li>
+        <li>✅ Terraceamento</li>
+        <li>✅ Adubação Orgânica</li>
+    </ul>
+</section>
+
+<section id="agua">
+    <h2>💧 Proteção das Nascentes</h2>
+    <p>
+        Preservar as nascentes garante água limpa para a agricultura,
+        os animais e as futuras gerações.
+    </p>
+</section>
+
+<section id="bio">
+    <h2>🦋 Biodiversidade</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🐝 Abelhas</h3>
+            <p>Responsáveis pela polinização de diversas culturas agrícolas.</p>
+        </div>
+
+        <div class="card">
+            <h3>🪱 Minhocas</h3>
+            <p>Melhoram a qualidade e a fertilidade do solo.</p>
+        </div>
+
+        <div class="card">
+            <h3>🐦 Pássaros</h3>
+            <p>Ajudam no controle natural de pragas.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="regen">
+    <h2>🌳 Agricultura Regenerativa</h2>
+
+    <p>
+        Produzir alimentos recuperando os recursos naturais e aumentando
+        a biodiversidade.
+    </p>
+
+    <br>
+
+    <ul>
+        <li>✅ Compostagem</li>
+        <li>✅ Agroflorestas</li>
+        <li>✅ Integração Lavoura-Pecuária</li>
+        <li>✅ Cobertura Vegetal</li>
+    </ul>
+</section>
+
+<section id="simulador">
+    <h2>🎮 Monte Sua Fazenda Sustentável</h2>
+
+    <label>Solo</label>
+    <select id="soloP">
+        <option value="20">Plantio Direto (+20)</option>
+        <option value="-20">Queimada (-20)</option>
+    </select>
+
+    <label>Água</label>
+    <select id="aguaP">
+        <option value="20">Proteção das Nascentes (+20)</option>
+        <option value="-15">Uso Excessivo (-15)</option>
+    </select>
+
+    <label>Biodiversidade</label>
+    <select id="bioP">
+        <option value="20">Preservar Mata Nativa (+20)</option>
+        <option value="-25">Desmatamento (-25)</option>
+    </select>
+
+    <label>Energia</label>
+    <select id="energiaP">
+        <option value="15">Energia Solar (+15)</option>
+        <option value="5">Combustível Fóssil (+5)</option>
+    </select>
+
+    <label>Resíduos</label>
+    <select id="residuosP">
+        <option value="20">Compostagem (+20)</option>
+        <option value="-15">Descarte Inadequado (-15)</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="calcular()">Ver Resultado</button>
+
+    <div id="resultado"></div>
+</section>
+
+<footer>
+    <p>🌱 EcoAgro - Produzir sem Destruir | Projeto Agrinho 2026</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
